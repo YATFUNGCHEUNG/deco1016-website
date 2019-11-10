@@ -9,15 +9,19 @@ LEAVE THESE STYLES
   
   }
 
+  .header {
+    background-color: #3c3c3c;
+  }
+
   .header img {
     display: block;
     margin: 1rem auto;
     max-width: 50%;
     padding-top: 5px;
     padding-left: 20px;
-  } 
-
-  b  {
+  }
+  
+  .bars  {
     position: relative;
     top: 50px;
     left: 40px;
@@ -31,24 +35,6 @@ LEAVE THESE STYLES
     object-position: 0px 20%;
     filter: brightness(90%);
   }  
-
-/* -------------------
-ADD YOUR GRID CSS HERE
--------------------- */
-.grid-container {
-    display: grid;
-    grid-template-columns: 350px 1fr 300px;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "header nav nav" "content content content" "footer footer footer";
-  }
-  
-  .header { grid-area: header; }
-  
-  .nav { grid-area: nav; }
-  
-  .content { grid-area: content; }
-  
-  .footer { grid-area: footer; }
 
 
 /* -------------------
@@ -73,6 +59,10 @@ ADD YOUR GRID CSS HERE
 /* ---------------
 NAV
 --------------- */
+
+.nav-container {
+    background-color: #3c3c3c;
+}
 
 nav .nav-container {
     position: sticky;
@@ -232,6 +222,7 @@ CONTENT
   .content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   h1 {
@@ -258,9 +249,11 @@ CONTENT
 
    h3 {
     color: rgb(4, 4, 4);
-    font-size: 25px;
+    font-size: 35px;
+    font-weight: bold;
     font-family: 'Dosis';
     letter-spacing: 0.5px;
+    margin-bottom: 13px;
    }
 
    h4 {
@@ -277,8 +270,28 @@ CONTENT
     font-family: 'Dosis';
     letter-spacing: 0.5px;
    }
+
+   b  {
+    font-family: 'Dosis';
+    font-size: 20px;
+    letter-spacing: 0.5px
+   }
+
+   a {
+    color: rgb(0, 166, 255);
+    font-size: 15px;
+    font-family: 'Dosis';
+    letter-spacing: 0.5px;  
+   }
+
+   label  {
+    font-family: 'Dosis';
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px
+   }
    
-   ._1XtDr.kEh4A {
+   ._BG {
      background-image: url("work.jpg");;
      width: 100%;
      height: 700px;
@@ -286,62 +299,7 @@ CONTENT
      /* background-size: 100% 100%; */
      background-repeat: no-repeat;
      background-position: 50%;
-     filter: brightness(90%);
-   }  
-
-/* ---------------
-SEARCH BOX
---------------- */
-
-body {
-    margin: 0;
-    padding: 0;
-    background: #ffffff;
-   }
-   
-   .search-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #2f3640;
-    height: 50px;
-    border-radius: 50px;
-    padding: 5px;
-   }
-   
-   .search-btn {
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    cursor: pointer;
-   }
-   
-   .search-txt {
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0 16px;
-    color: white;
-    font-size: 16px;
-    font-family: 'Dosis';
-    letter-spacing: 0.5px;
-    line-height: 40px;
-    width: 450px;
-    font-weight: bold;
-    transition-property: transform;
-    transition-duration: 0.5s;
-   }
-
-  .search-txt:hover {
-    transform: scale(1.03);
+     filter: brightness(30%);
    }  
 
 /* ---------------
@@ -350,12 +308,14 @@ TUTOR LIST
 .content .tutor-container {
   display: flex;
   width: 100%;
+  background-color: #3c3c3c;
 }
 
 .content .tutor-container .tutor {
   position: relative;
   margin: auto;
   display: block;
+  background-color: #3c3c3c;
 }
 
 .content .tutor-container .tutor-hover.x1:hover .tutors a {
@@ -399,8 +359,8 @@ TUTOR LIST
   /* width: 140px; */
   font-size: 16px;
   font-weight: 600;
-  color: rgb(0, 0, 0);
-  background-color: white;
+  color: #000000;
+  background-color: #3c3c3c;
   cursor: pointer;
   height: 35px;
   text-align:center;
@@ -410,171 +370,142 @@ TUTOR LIST
 }
 
 hr { 
-  width:90%; 
+  width:100%; 
   height:2px; 
   background: rgb(0, 0, 0);
   margin: auto;
 } 
 
 /* ---------------
-HOW TUTOR-X WORKS
+SIGN UP FORM
 ------------------ */
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
-}
-.testimonials1{
-  padding: 40px 0;
-  background: rgb(245, 245, 245);
-  color: #434343;
-  text-align: center;
-  margin: auto;
-}
-.inner1{
-  max-width: 100%;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 20px;
-}
 
-.row1{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.col1{
-  flex: 33.33%;
-  max-width: 33.33%;
-  box-sizing: border-box;
-  padding: 15px;
-}
-.testimonial1{
-  background: rgb(245, 245, 245);
-  padding: 30px;
-}
-.testimonial1 img{
-  width: 100px;
-  height: 100px;
-}
-.name1{
-  font-size: 20px;
-  margin: 20px 0;
-  font-family: 'Dosis';
-  letter-spacing: 0.5px;
-}
+._tab {
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 50px;
+    width: 40%;
+    height: 600px;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 5px;
+    padding: 20px;
+  }  
 
-/* ---------------
-TUTORS FROM
------------------- */
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
-}
+  * {box-sizing: border-box;}
 
-.testimonials2{
-  padding: 60px 0;
-  background-image: url("blue.jpg");;
-  background-repeat: no-repeat;
-  background-position: 0 90%;  
-  color: #434343;
-  text-align: center;
-  margin: auto;
+/* Full-width input fields */
+input[type=text], input[type=password] {
   width: 100%;
-  height: 280px;
-  background-size: cover;
-}
-
-.inner2{
-  margin: auto;
-  overflow: hidden;
-  padding: 0 20px;
-}
-
-.row2{
+  padding: 18px;
+  margin-bottom: 30px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.col2{
-  flex: 20%;
-  max-width: 20%;
-  box-sizing: border-box;
-  padding-top: 30px;
-  object-position: center;
-}
-.testimonial2{
-  padding: 5px;
-}
-.testimonial2 img{
-  max-width: 250px;
-  height: auto;
-  object-fit: cover;
-  object-position: 50%;
-  filter: grayscale(100%);
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-.name2{
-  font-size: 20px;
-  margin: 20px 0;
-  font-family: 'Dosis';
-  letter-spacing: 0.5px;
+  border: none;
+  background: #f1f1f1;
+  font-size: 15px;
 }
 
-/* ---------------
-FEEDBACK
---------------- */
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
-}
-.testimonials{
-  padding: 40px 0;
-  background: #ffffff;
-  color: #434343;
-  text-align: center;
-  margin: auto;
-}
-.inner{
-  max-width: 100%;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 20px;
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
-.row{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+/* Set a style for all buttons */
+button {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
 }
-.col{
-  flex: 33.33%;
-  max-width: 33.33%;
-  box-sizing: border-box;
-  padding: 15px;
+
+button:hover {
+  opacity:1;
 }
-.testimonial{
-  background: #fff;
-  padding: 30px;
-}
-.testimonial img{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-.name{
+
+/* Extra styles for the cancel button */
+.signupbtn {
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #0072ff, #1488CC);
+    font-size: 20px;
+    font-family: 'Dosis';
+    font-weight: bold;
+  }
+  
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, #F00000, #DC281E);
   font-size: 20px;
-  text-transform: uppercase;
-  margin: 20px 0;
   font-family: 'Dosis';
-  letter-spacing: 0.5px;
+  font-weight: bold;
 }
-.stars{
-  color: #4297ff;
-  margin-bottom: 20px;
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* ---------------
@@ -595,6 +526,7 @@ FOOTER
   width: 100%;
   height: 270px;
   background-size: cover;
+  filter: brightness(30%);
 }
 
 ._term{
@@ -638,8 +570,9 @@ FOOTER
   font-weight: bold;
   margin: 10px 0;
   font-family: 'Dosis';
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   color: white;
+  opacity: .4;
   text-transform: uppercase;
 }
 
@@ -651,7 +584,7 @@ FOOTER
   line-height: 19px;
   font-family: 'Dosis';
   color: white;
-  opacity: .8;
+  opacity: .2;
   min-width: 44px;
   text-decoration: none;
 }
@@ -680,18 +613,18 @@ ADD YOUR RESPONSIVE CSS HERE
       1fr /* Content */
       auto; /* Footer */
   }
-  
-  nav {
-    display: none;
-    margin: 0;
-  }
 
-  b  {
+  .bars  {
     position: absolute;
     top: 40px;
     left: 40px;
     display: block;
    }
+  
+  nav {
+    display: none;
+    margin: 0;
+  }
 
   .header img {
     /* transform: translate(-100px, 0px); */
@@ -749,6 +682,20 @@ ADD YOUR RESPONSIVE CSS HERE
 .testimonials3{
   height: auto;
 }
+
+._tab {
+    width: 90%;
+    height: 650px;
+  }
+
+button {
+    width: 100%;
+  }  
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 100%;
+}  
  
 }
   
