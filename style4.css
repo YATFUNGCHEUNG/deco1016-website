@@ -466,6 +466,7 @@ FEEDBACK
   margin: 10px 0;
   font-family: 'Dosis';
   letter-spacing: 0.5px;
+  font-weight: bold;
 }
 .stars{
   color: #4297ff;
