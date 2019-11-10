@@ -9,10 +9,6 @@ LEAVE THESE STYLES
   
   }
 
-  .header {
-    background-color: #3c3c3c;
-  }
-
   .header img {
     display: block;
     margin: 1rem auto;
@@ -21,10 +17,16 @@ LEAVE THESE STYLES
     padding-left: 20px;
   }
   
-  .bars  {
+  .nav-container .profile {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  b  {
     position: relative;
     top: 50px;
-    left: 40px;
+    right: 40px;
     display: none;
    }
 
@@ -35,6 +37,24 @@ LEAVE THESE STYLES
     object-position: 0px 20%;
     filter: brightness(90%);
   }  
+
+/* -------------------
+ADD YOUR GRID CSS HERE
+-------------------- */
+.grid-container {
+    display: grid;
+    grid-template-columns: 350px 1fr 300px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header nav nav" "content content content" "footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .nav { grid-area: nav; }
+  
+  .content { grid-area: content; }
+  
+  .footer { grid-area: footer; }
 
 
 /* -------------------
@@ -59,10 +79,6 @@ ADD YOUR GRID CSS HERE
 /* ---------------
 NAV
 --------------- */
-
-.nav-container {
-    background-color: #3c3c3c;
-}
 
 nav .nav-container {
     position: sticky;
@@ -227,21 +243,19 @@ CONTENT
 
   h1 {
     position: absolute;
-    left: 50%;
-    top: 35%;
-    transform: translate(-50%, -50%);
+    top: 19%;
     color: white;
-    font-size: 70px;
+    font-size: 45px;
     font-family: 'Dosis';
-    letter-spacing: 2px;
-   }
+    letter-spacing: 0.5px;
+    padding-left: 50px;
+    padding-right: 50px;
+   } 
 
    h2 {
     position: absolute;
-    left: 50%;
-    top: 41%;
-    transform: translate(-50%, -50%);
-    color: white;
+    top: 15%;
+    color: rgb(140, 219, 255);
     font-size: 20px;
     font-family: 'Dosis';
     letter-spacing: 0.5px;
@@ -249,11 +263,9 @@ CONTENT
 
    h3 {
     color: rgb(4, 4, 4);
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 25px;
     font-family: 'Dosis';
     letter-spacing: 0.5px;
-    margin-bottom: 13px;
    }
 
    h4 {
@@ -270,256 +282,194 @@ CONTENT
     font-family: 'Dosis';
     letter-spacing: 0.5px;
    }
-
-   b  {
-    font-family: 'Dosis';
-    font-size: 20px;
-    letter-spacing: 0.5px
-   }
-
-   a {
-    color: rgb(0, 166, 255);
-    font-size: 15px;
-    font-family: 'Dosis';
-    letter-spacing: 0.5px;  
-   } */
-
-   label  {
-    font-family: 'Dosis';
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 0.5px
-   }
    
    ._BG {
-     background-image: url("work.jpg");;
+     background-image: linear-gradient(141deg, #00c6ff 0%, #0072ff 100%);
      width: 100%;
-     height: 700px;
+     height: 1200px;
      background-size: cover;
      /* background-size: 100% 100%; */
      background-repeat: no-repeat;
      background-position: 50%;
-     filter: brightness(30%);
+     filter: brightness(90%);
    }
    
-   .close  {
-    position: absolute;
-    margin: auto;
-    display: block;
-    margin-right: 23%;
-    margin-top: 3%;
-   }
-
-/* ---------------
-TUTOR LIST
---------------- */
-.content .tutor-container {
-  display: flex;
-  width: 100%;
-  background-color: #3c3c3c;
-}
-
-.content .tutor-container .tutor {
-  position: relative;
-  margin: auto;
-  display: block;
-  background-color: #3c3c3c;
-}
-
-.content .tutor-container .tutor-hover.x1:hover .tutors a {
-  display: block;
-}
-
-.tutor .buttons {
-  background-color: rgb(198, 74, 74); 
-  border: none;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.content .tutor-container ul {
-  list-style-type: none;
-  overflow: hidden;
-  /* transform: translate(50%, 0%); */
-}
-
-.content .tutor-container ul li{
-  position: relative;
-  margin: 20px 0;
-  padding: 20px;
-  float: left;
-}
-
-.content .tutor-container ul li p {
-  text-transform: capitalize;
-  font-family: 'Dosis';
-  font-weight: normal;
-  letter-spacing: 0.4px;
-  padding: 5px 10px;
-  text-decoration: none;
-  display: inline;
-  font-size: 16px;
-}
-
-.tutor-hover {
-  /* width: 140px; */
-  font-size: 16px;
-  font-weight: 600;
-  color: #000000;
-  background-color: #3c3c3c;
-  cursor: pointer;
-  height: 35px;
-  text-align:center;
-  border: none;
-  background-size: 100% 100%;
-  justify-content: center;
-}
-
-hr { 
-  width:100%; 
-  height:2px; 
-  background: rgb(0, 0, 0);
-  margin: auto;
-} 
-
-/* ---------------
-SIGN UP FORM
------------------- */
-
-._tab {
+   ._tab {
     position: absolute;
     background-color: #ffffff;
-    margin-top: 50px;
-    width: 40%;
-    height: 600px;
+    margin-top: 150px;
+    width:75%;
+    height: 940px;
     background-size: cover;
-    /* background-size: 100% 100%; */
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 5px;
     padding: 20px;
-  }  
-
-  * {box-sizing: border-box;}
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 18px;
-  margin-bottom: 30px;
-  display: flex;
-  border: none;
-  background: #f1f1f1;
-  font-size: 15px;
-  border-radius: 5px;
-  font-family: 'Dosis';
-}
-
-/* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for all buttons */
-button {
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity:1;
-}
-
-/* Extra styles for the cancel button */
-.signupbtn {
-    padding: 10px 20px;
-    background-image: linear-gradient(to right, #0072ff, #1488CC);
-    font-size: 20px;
-    font-family: 'Dosis';
-    font-weight: bold;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
   }
   
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 10px 20px;
-  background-image: linear-gradient(to right, #F00000, #DC281E);
+
+
+/* ---------------
+SEARCH BOX
+--------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+   }
+   
+   .search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    background: #2f3640;
+    height: 50px;
+    border-radius: 50px;
+    padding: 5px;
+   }
+   
+   .search-btn {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+   }
+   
+   .search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0 16px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Dosis';
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    width: 450px;
+    font-weight: bold;
+    transition-property: transform;
+    transition-duration: 0.5s;
+   }
+
+  .search-txt:hover {
+    transform: scale(1.03);
+   }  
+
+
+
+/* ---------------
+HOW TUTOR-X WORKS
+------------------ */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.testimonials1{
+  padding: 40px 0;
+  background: rgb(245, 245, 245);
+  color: #434343;
+  text-align: center;
+  margin: auto;
+}
+.inner1{
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.row1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col1{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial1{
+  background: rgb(245, 245, 245);
+  padding: 30px;
+}
+.testimonial1 img{
+  width: 100px;
+  height: 100px;
+}
+.name1{
   font-size: 20px;
+  margin: 20px 0;
   font-family: 'Dosis';
-  font-weight: bold;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  letter-spacing: 0.5px;
 }
 
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
+/* ---------------
+FEEDBACK
+--------------- */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.testimonials{
+  background: #ffffff;
+  color: #434343;
+  text-align: left;
+  margin: auto;
+}
+.inner{
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
 }
 
-/* Add padding to container elements */
-.container {
-  padding: 16px;
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 15px;
 }
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
-  padding-top: 50px;
+.col{
+  flex: 100%;
+  max-width: 75%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 15px;
+  transform: translate(1%, 0);
+  background-color: rgb(244, 244, 244);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+.testimonial{
+  background-color: rgb(244, 244, 244);
+  padding: 10px;
 }
-
-/* Style the horizontal ruler */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+.row img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
- 
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
+.name{
+  font-size: 20px;
+  margin: 10px 0;
+  font-family: 'Dosis';
+  letter-spacing: 0.5px;
 }
-
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.stars{
+  color: #4297ff;
+  margin-bottom: 10px;
 }
 
 /* ---------------
@@ -540,7 +490,6 @@ FOOTER
   width: 100%;
   height: 270px;
   background-size: cover;
-  filter: brightness(30%);
 }
 
 ._term{
@@ -584,9 +533,8 @@ FOOTER
   font-weight: bold;
   margin: 10px 0;
   font-family: 'Dosis';
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   color: white;
-  opacity: .4;
   text-transform: uppercase;
 }
 
@@ -598,7 +546,7 @@ FOOTER
   line-height: 19px;
   font-family: 'Dosis';
   color: white;
-  opacity: .2;
+  opacity: .8;
   min-width: 44px;
   text-decoration: none;
 }
@@ -628,31 +576,27 @@ ADD YOUR RESPONSIVE CSS HERE
       auto; /* Footer */
   }
 
-  .bars  {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    display: block;
-   }
+  .header {
+    height: 117px;
+    margin-bottom: 10px;
+  }
   
   nav {
     display: none;
     margin: 0;
   }
 
-  .header img {
-    /* transform: translate(-100px, 0px); */
-    object-position: center;
-    margin: auto;
-    min-width: 20%;
-    padding: 10px;
-  }  
-
-  h2 {
+  b  {
     position: absolute;
-    left: 50%;
-    top: 53%;
-   } 
+    top: 50px;
+    right: 40px;
+    display: block;
+   }
+
+  .header img {
+    object-position: center;
+    width: 200px;
+  }  
   
   .search-box { 
     display: none;
@@ -679,55 +623,32 @@ ADD YOUR RESPONSIVE CSS HERE
     border-radius: 50px;
 }
 
-.col{
-  flex: 100%;
-  max-width: 100%;
+h1 {
+    position: absolute;
+    top: 19%;
+    color: white;
+    font-size: 35px;
+    font-family: 'Dosis';
+    letter-spacing: 0.5px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
-.col1{
-  flex: 100%;
-  max-width: 100%;
+   
+.col{
+    margin-top: 15px;
+    max-width: 90%;
 }
 
-.col3{
-  flex: 100%;
-  max-width: 100%;
-}
+._BG { 
+    height: 2050px;
+  }
+
+._tab {
+    height: 1800px;
+  }
 
 .testimonials3{
   height: auto;
-}
-
-._tab {
-    width: 90%;
-    height: 650px;
-  }
-
-button {
-    width: 100%;
-    border-radius: 30px;
-  }  
-
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 100%;
-}
-
-.cancelbtn {
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-} 
-
-.signupbtn {
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-
-.close  {
-    position: absolute;
-    margin: auto;
-    display: block;
-    margin-right: 5%;
-    margin-top: 15%;
 }
  
 }

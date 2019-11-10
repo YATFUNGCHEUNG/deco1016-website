@@ -277,7 +277,7 @@ CONTENT
     letter-spacing: 0.5px
    }
 
-   a {
+   /* a {
     color: rgb(0, 166, 255);
     font-size: 15px;
     font-family: 'Dosis';
@@ -408,7 +408,7 @@ SIGN UP FORM
 input[type=text], input[type=password] {
   width: 100%;
   padding: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   display: flex;
   border: none;
   background: #f1f1f1;
@@ -416,6 +416,33 @@ input[type=text], input[type=password] {
   border-radius: 5px;
   font-family: 'Dosis';
 }
+
+select {
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+    margin-bottom: 30px;
+    display: flex;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 5px;
+    font-family: 'Dosis';
+  }
+ 
+  option {
+      width: 100%;
+      text-align: center;
+      font-family: 'Dosis';
+      font-size: 20px;
+      height: auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      letter-spacing: 0.5px;
+      font-weight: bold;
+  }
+
+
 
 /* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=password]:focus {
@@ -439,7 +466,7 @@ button:hover {
 }
 
 /* Extra styles for the cancel button */
-.signupbtn {
+.contbtn {
     padding: 10px 20px;
     background-image: linear-gradient(to right, #0072ff, #1488CC);
     font-size: 20px;
@@ -450,9 +477,9 @@ button:hover {
   }
   
 /* Extra styles for the cancel button */
-.cancelbtn {
+.skipbtn {
   padding: 10px 20px;
-  background-image: linear-gradient(to right, #F00000, #DC281E);
+  background-image: linear-gradient(to right, #232526, #414345);
   font-size: 20px;
   font-family: 'Dosis';
   font-weight: bold;
@@ -461,7 +488,7 @@ button:hover {
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.skipbtn, .contbtn {
   float: left;
   width: 50%;
 }
@@ -469,28 +496,6 @@ button:hover {
 /* Add padding to container elements */
 .container {
   padding: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
-  padding-top: 50px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* Style the horizontal ruler */
@@ -707,17 +712,17 @@ button {
     border-radius: 30px;
   }  
 
-.cancelbtn, .signupbtn {
+.skipbtn, .contbtn {
   float: left;
   width: 100%;
 }
 
-.cancelbtn {
+.skipbtn {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 } 
 
-.signupbtn {
+.contbtn {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }

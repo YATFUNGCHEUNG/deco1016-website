@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style3.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.11.1/js/all.js"></script>
-  <title>SIGN UP</title>
+  <title>SETTINGS</title>
 </head>
 
 <body>
@@ -39,36 +39,32 @@
     <!-- Main content -->
     <main class="content">
       <div class="_BG"></div>
-      <div class = "close">
-            <i class="fas fa-times" style="font-size: 1.3em;"></i>
-          </div>
       <div class="_tab">
             <div class="fill-container">
-                    <h3>Sign up</h3>
-                    <p>Please fill in this form to create an account for free.</p>
+                    <h3>You have sucessfully created an account!</h3>
+                    <p>Please fill in the details below so we can find the most suitable tutor for you</p>
                     <hr>
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-              
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Create Password" name="psw" required>
-              
-                    <label for="psw-repeat"><b>Confirm Password</b></label>
-                    <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
-                    
-                    <label>
-                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                    </label>
-              
-                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-              
+                    <label for="email"><b>What subject do you need help with?</b></label>
+                    <input type="text" placeholder="Enter Subject" name="email">
+                    <p>*You can change your subject preference later.</p>
+                    <br>
+                    <br>
+                    <label for="identiy"><b>I am a...</b></label>
+                    <select name="choice" size="3">
+                            <option value="Parent">Parent</option>
+                            <option value="Student">Student</option>
+                            <option value="Worker">Worker</option>
+                    </select>
+            
+
+                    <br>
                     <div class="clearfix">
-                    <a href="index.html">  
-                    <button type="button" class="cancelbtn">Cancel</button>
+                    <a href="home.html">
+                      <button type="button" class="skipbtn">Skip</button>
                     </a>
-                    <a href="settings.html">
-                    <button type="submit" class="signupbtn">Create Account</button>
-                    </a> 
+                    <a href="home.html"> 
+                      <button type="submit" class="contbtn">Continue</button>
+                    </a>  
                     </div>
                   </div>   
 
