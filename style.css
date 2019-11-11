@@ -1,353 +1,381 @@
 /* ---------------
-LEAVE THESE STYLES
+HEADER
 --------------- */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  .header img {
-    display: block;
-    margin: 1rem auto;
-    max-width: 50%;
-    padding-top: 5px;
-    padding-left: 20px;
-  } 
+/* COMPANY LOGO */
+.header img {
+  display: block; 
+  margin: 1rem auto;
+  max-width: 50%;
+  padding-top: 5px;
+  padding-left: 20px;
+}
 
-  b  {
-    position: relative;
-    top: 50px;
-    left: 40px;
-    display: none;
-   }
-
-  .testimonials img {
-    width: 100%;
-    height:720px;
-    object-fit: cover;
-    object-position: 0px 20%;
-    filter: brightness(90%);
-  }  
+/* MENU SYMBOL */
+b {
+  position: relative;
+  top: 50px;
+  left: 40px;
+  display: none;
+}
 
 /* -------------------
-ADD YOUR GRID CSS HERE
+GRID CSS
 -------------------- */
 .grid-container {
-    display: grid;
-    grid-template-columns: 350px 1fr 300px;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "header nav nav" "content content content" "footer footer footer";
-  }
-  
-  .header { grid-area: header; }
-  
-  .nav { grid-area: nav; }
-  
-  .content { grid-area: content; }
-  
-  .footer { grid-area: footer; }
+  display: grid;
+  grid-template-columns: 350px 1fr 300px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header nav nav" "content content content" "footer footer footer";
+}
 
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
 
 /* -------------------
-ADD YOUR GRID CSS HERE
+GRID CSS 
 -------------------- */
+
 .grid-container {
-    display: grid;
-    grid-template-columns: 350px 1fr 300px;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "header nav nav" "content content content" "footer footer footer";
-  }
-  
-  .header { grid-area: header; }
-  
-  .nav { grid-area: nav; }
-  
-  .content { grid-area: content; }
-  
-  .footer { grid-area: footer; }
-  
+  display: grid;
+  grid-template-columns: 350px 1fr 300px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header nav nav" "content content content" "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
 
 /* ---------------
 NAV
 --------------- */
-
+/* NAV CONTAINER PROPERTIES */
 nav .nav-container {
-    position: sticky;
-    top: 20px;
-    padding: 0.5em;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  nav ul li{
-    position: relative;
-    margin: 20px 0;
-    float: left;
-  }
-  
-  nav ul li a {
-    line-height: 35px;
-    text-transform: capitalize;
-    font-family: 'Dosis';
-    font-weight: normal;
-    letter-spacing: 0.4px;
-    padding: 13px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    text-indent: -5px;
-  }
-  
-  nav ul li:not(.active) a{
-    color: rgb(0, 0, 0);
-    transition: all 0.1s ease;
-  }
-  
-  nav ul li:not(.active):hover a {
-    color: rgb(54, 184, 255);
-  }
+  position: sticky;
+  top: 20px;
+  padding: 0.5em;
+}
 
-  .content .content-container {
-    display: none;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .content .content-container ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .content .content-container ul li{
-    position: relative;
-    margin: 10px 0;
-  }
-  
-  .content .content-container ul li a {
-    text-transform: capitalize;
-    font-family: 'Dosis';
-    font-weight: normal;
-    letter-spacing: 0.4px;
-    padding: 5px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    text-indent: -5px;
-  }
-  
-  .content .content-container ul li:not(.active) a{
-    color: rgb(0, 0, 0);
-    transition: all 0.1s ease;
-  }
-  
-  .content .content-container ul li:not(.active):hover a {
-    color: rgb(54, 184, 255);
-  }
+/* NAV STYLE */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
-  /* ---------------
-LOG IN AND SIGN UP
+/* NAV TABS POSITION FLOW */
+nav ul li {
+  position: relative;
+  margin: 20px 0;
+  float: left;
+}
+
+/* NAV TABS TEXT */
+nav ul li a {
+  line-height: 35px;
+  text-transform: capitalize;
+  font-family: 'Dosis';
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  padding: 13px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  text-indent: -5px;
+}
+
+/* NAV TABS DEFAULT PROPERTIES */
+nav ul li:not(.active) a {
+  color: rgb(0, 0, 0);
+  transition: all 0.1s ease;
+}
+
+/* NAV TABS PROPERTIES WHILE HOVER*/
+nav ul li:not(.active):hover a {
+  color: rgb(54, 184, 255);
+}
+
+
+/* ---------------
+LOG IN AND SIGN UP BUTTON
 --------------- */
-
-  nav .nav-container .buttons {
-    display: block;
-    position: sticky;
-    top: 20px;
-    float: right;
-    padding-right: 30px;
-  }
-  
-  * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+nav .nav-container .buttons {
+  display: block;
+  position: sticky;
+  top: 20px;
+  float: right;
+  padding-right: 30px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/* BUTTON POSITIONING */
 .buttons {
-    /* margin: 10%; */
-    text-align: center;
+  text-align: center;
 }
 
+/* BUTTON DEFAULT PROPERTIES */
 .btn-hover {
-    width: 200px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    /* margin: 20px; */
-    height: 35px;
-    text-align:center;
-    border: none;
-    background-size: 300% 100%;
-    border-radius: 50px;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Dosis';
+  color: #fff;
+  cursor: pointer;
+  height: 35px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
+/* BUTTON DEFAULT PROPERTIES WHILE HOVER */
 .btn-hover:hover {
-    background-position: 100% 0;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
+/* REMOVE BUTTON'S OUTLINE */
 .btn-hover:focus {
-    outline: none;
+  outline: none;
 }
 
+/* LOG IN BUTTON'S TEXT DEFAULT COLOR */
 .btn-hover.color-1 p {
   color: #0099ff;
+  font-size: 18px;
 }
 
+/* LOG IN BUTTON'S TEXT NEW COLOR WHEN HOVER */
 .btn-hover:hover.color-1 p {
   color: #ffffff;
 }
 
+/* APPLY GRADIENT TO THE LOG IN BUTTON */
 .btn-hover.color-1 {
   background-image: linear-gradient(to right, #c0d9ff, #b6fbff, #0575E6, #021b79);
 }
 
+/* APPLY GRADIENT TO THE SIGN UP BUTTON */
 .btn-hover.color-2 {
   background-image: linear-gradient(to right, #00c6ff, #0072ff, #1488CC, #2b32b2);
 }
 
+/* LOG IN AND SIGN UP BUTTON ON MOBILE INTERFACE WILL BE HIDDEN ON WEB */
+.content .content-container {
+  display: none;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content .content-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.content .content-container ul li {
+  position: relative;
+  margin: 10px 0;
+}
+
+.content .content-container ul li a {
+  text-transform: capitalize;
+  font-family: 'Dosis';
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  text-indent: -5px;
+}
+
+.content .content-container ul li:not(.active) a {
+  color: rgb(0, 0, 0);
+  transition: all 0.1s ease;
+}
+
+.content .content-container ul li:not(.active):hover a {
+  color: rgb(54, 184, 255);
+}
+
+
 /* ---------------
 CONTENT
 --------------- */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+h1 {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 70px;
+  font-family: 'Dosis';
+  letter-spacing: 2px;
+}
 
-  h1 {
-    position: absolute;
-    left: 50%;
-    top: 35%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 70px;
-    font-family: 'Dosis';
-    letter-spacing: 2px;
-   }
+h2 {
+  position: absolute;
+  left: 50%;
+  top: 41%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-family: 'Dosis';
+  letter-spacing: 0.5px;
+}
 
-   h2 {
-    position: absolute;
-    left: 50%;
-    top: 41%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    font-family: 'Dosis';
-    letter-spacing: 0.5px;
-   } 
+h3 {
+  color: rgb(4, 4, 4);
+  font-size: 25px;
+  font-family: 'Dosis';
+  letter-spacing: 0.5px;
+}
 
-   h3 {
-    color: rgb(4, 4, 4);
-    font-size: 25px;
-    font-family: 'Dosis';
-    letter-spacing: 0.5px;
-   }
+h4 {
+  color: rgb(4, 4, 4);
+  font-size: 25px;
+  font-family: 'Dosis';
+  letter-spacing: 0.5px;
+  color: white;
+}
 
-   h4 {
-    color: rgb(4, 4, 4);
-    font-size: 25px;
-    font-family: 'Dosis';
-    letter-spacing: 0.5px;
-    color: white;
-   }
+p {
+  color: rgb(4, 4, 4);
+  font-size: 15px;
+  font-family: 'Dosis';
+  letter-spacing: 0.5px;
+}
 
-   p {
-    color: rgb(4, 4, 4);
-    font-size: 15px;
-    font-family: 'Dosis';
-    letter-spacing: 0.5px;
-   }
-   
-   ._BG {
-     background-image: url("work.jpg");;
-     width: 100%;
-     height: 700px;
-     background-size: cover;
-     /* background-size: 100% 100%; */
-     background-repeat: no-repeat;
-     background-position: 50%;
-     filter: brightness(90%);
-   }  
+._BG {
+  background-image: url("work.jpg");
+  ;
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  filter: brightness(90%);
+}
+
+.testimonials img {
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+  object-position: 0px 20%;
+  filter: brightness(90%);
+}
 
 /* ---------------
 SEARCH BOX
 --------------- */
 
 body {
-    margin: 0;
-    padding: 0;
-    background: #ffffff;
-   }
-   
-   .search-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #2f3640;
-    height: 50px;
-    border-radius: 50px;
-    padding: 5px;
-   }
-   
-   .search-btn {
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    cursor: pointer;
-   }
-   
-   .search-txt {
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0 16px;
-    color: white;
-    font-size: 16px;
-    font-family: 'Dosis';
-    letter-spacing: 0.5px;
-    line-height: 40px;
-    width: 450px;
-    font-weight: bold;
-    transition-property: transform;
-    transition-duration: 0.5s;
-   }
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
 
-  .search-txt:hover {
-    transform: scale(1.03);
-   }  
+.search-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2f3640;
+  height: 50px;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.search-btn {
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0 16px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Dosis';
+  letter-spacing: 0.5px;
+  line-height: 40px;
+  width: 450px;
+  font-weight: bold;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.search-txt:hover {
+  transform: scale(1.03);
+}
 
 /* ---------------
 TUTOR LIST
 --------------- */
+
 .content .tutor-container {
   display: flex;
   width: 100%;
@@ -364,7 +392,7 @@ TUTOR LIST
 }
 
 .tutor .buttons {
-  background-color: rgb(198, 74, 74); 
+  background-color: rgb(198, 74, 74);
   border: none;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -375,10 +403,9 @@ TUTOR LIST
 .content .tutor-container ul {
   list-style-type: none;
   overflow: hidden;
-  /* transform: translate(50%, 0%); */
 }
 
-.content .tutor-container ul li{
+.content .tutor-container ul li {
   position: relative;
   margin: 20px 0;
   padding: 20px;
@@ -397,68 +424,67 @@ TUTOR LIST
 }
 
 .tutor-hover {
-  /* width: 140px; */
   font-size: 16px;
   font-weight: 600;
   color: rgb(0, 0, 0);
   background-color: white;
   cursor: pointer;
   height: 35px;
-  text-align:center;
+  text-align: center;
   border: none;
   background-size: 100% 100%;
   justify-content: center;
 }
 
-hr { 
-  width:90%; 
-  height:2px; 
+hr {
+  width: 90%;
+  height: 2px;
   background: rgb(0, 0, 0);
   margin: auto;
-} 
+}
 
 /* ---------------
 HOW TUTOR-X WORKS
 ------------------ */
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
-}
-.testimonials1{
+.testimonials1 {
   padding: 40px 0;
   background: rgb(245, 245, 245);
   color: #434343;
   text-align: center;
   margin: auto;
 }
-.inner1{
+
+.inner1 {
   max-width: 100%;
   margin: auto;
   overflow: hidden;
   padding: 0 20px;
 }
 
-.row1{
+.row1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.col1{
+
+.col1 {
   flex: 33.33%;
   max-width: 33.33%;
   box-sizing: border-box;
   padding: 15px;
 }
-.testimonial1{
+
+.testimonial1 {
   background: rgb(245, 245, 245);
   padding: 30px;
 }
-.testimonial1 img{
+
+.testimonial1 img {
   width: 100px;
   height: 100px;
 }
-.name1{
+
+.name1 {
   font-size: 20px;
   margin: 20px 0;
   font-family: 'Dosis';
@@ -466,19 +492,14 @@ HOW TUTOR-X WORKS
 }
 
 /* ---------------
-TUTORS FROM
+WHERE THE TUTORS ARE FROM
 ------------------ */
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
-}
-
-.testimonials2{
+.testimonials2 {
   padding: 60px 0;
-  background-image: url("blue.jpg");;
+  background-image: url("blue.jpg");
+  ;
   background-repeat: no-repeat;
-  background-position: 0 90%;  
+  background-position: 0 90%;
   color: #434343;
   text-align: center;
   margin: auto;
@@ -487,28 +508,31 @@ TUTORS FROM
   background-size: cover;
 }
 
-.inner2{
+.inner2 {
   margin: auto;
   overflow: hidden;
   padding: 0 20px;
 }
 
-.row2{
+.row2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.col2{
+
+.col2 {
   flex: 20%;
   max-width: 20%;
   box-sizing: border-box;
   padding-top: 30px;
   object-position: center;
 }
-.testimonial2{
+
+.testimonial2 {
   padding: 5px;
 }
-.testimonial2 img{
+
+.testimonial2 img {
   max-width: 250px;
   height: auto;
   object-fit: cover;
@@ -517,7 +541,8 @@ TUTORS FROM
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
-.name2{
+
+.name2 {
   font-size: 20px;
   margin: 20px 0;
   font-family: 'Dosis';
@@ -525,55 +550,56 @@ TUTORS FROM
 }
 
 /* ---------------
-FEEDBACK
+FEEDBACK FROM EXISITNNG USERS
 --------------- */
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
-}
-.testimonials{
+.testimonials {
   padding: 40px 0;
   background: #ffffff;
   color: #434343;
   text-align: center;
   margin: auto;
 }
-.inner{
+
+.inner {
   max-width: 100%;
   margin: auto;
   overflow: hidden;
   padding: 0 20px;
 }
 
-.row{
+.row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.col{
+
+.col {
   flex: 33.33%;
   max-width: 33.33%;
   box-sizing: border-box;
   padding: 15px;
 }
-.testimonial{
+
+.testimonial {
   background: #fff;
   padding: 30px;
 }
-.testimonial img{
+
+.testimonial img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
-.name{
+
+.name {
   font-size: 20px;
   text-transform: uppercase;
   margin: 20px 0;
   font-family: 'Dosis';
   letter-spacing: 0.5px;
 }
-.stars{
+
+.stars {
   color: #4297ff;
   margin-bottom: 20px;
 }
@@ -581,13 +607,7 @@ FEEDBACK
 /* ---------------
 FOOTER
 ------------------ */
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
-}
-
-.testimonials3{
+.testimonials3 {
   padding: 20px 0;
   background-color: #1fc8db;
   background-image: linear-gradient(141deg, #000428 0%, #004e92 100%);
@@ -598,43 +618,38 @@ FOOTER
   background-size: cover;
 }
 
-._term{
+._term {
   margin-bottom: 10px;
   margin-top: 13px;
 }
 
-/* ._rights{
-  margin-bottom: 10px;
-  margin-top: 13px;
-} */
-
-.inner3{
+.inner3 {
   margin: auto;
   overflow: hidden;
   padding: 0 20px;
 }
 
-
-.row3{
+.row3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.col3{
+
+.col3 {
   flex: 20%;
   max-width: 20%;
   box-sizing: border-box;
   object-position: center;
 }
-.testimonial3{
+
+.testimonial3 {
   padding: 10px;
   flex-direction: column;
   display: flex;
   align-items: flex-start;
-
 }
 
-.name3{
+.name3 {
   font-size: 23px;
   font-weight: bold;
   margin: 10px 0;
@@ -662,64 +677,49 @@ footer p {
   text-align: center;
 }
 
-
-  /* -------------------------
-ADD YOUR RESPONSIVE CSS HERE
+/* -------------------------
+RESPONSIVE CSS FOR MOBILE INTERFACE
 -------------------------- */
 @media screen and (max-width: 900px) {
   .grid-container {
-    grid-template-areas:
-      "header"
-      "nav"
-      "content"
-      "footer";
-        
+    grid-template-areas: "header" "nav" "content" "footer";
     grid-template-columns: 1fr;
-    grid-template-rows:
-      auto /* Header */
-      auto /* Nav */
-      1fr /* Content */
-      auto; /* Footer */
+    grid-template-rows: auto/* Header */
+    auto/* Nav */
+    1fr/* Content */
+    auto;
+    /* Footer */
   }
-  
   nav {
     display: none;
     margin: 0;
   }
-
-  b  {
+  b {
     position: absolute;
     top: 40px;
     left: 40px;
     display: block;
-   }
-
+  }
   .header img {
-    /* transform: translate(-100px, 0px); */
     object-position: center;
     margin: auto;
     min-width: 20%;
     padding: 10px;
-  }  
-
+  }
   h2 {
     position: absolute;
     left: 50%;
     top: 53%;
-   } 
-  
-  .search-box { 
+  }
+  .search-box {
     display: none;
-   }
-
+  }
   .content .content-container {
     display: block;
-  }  
-  
+  }
   .content .tutor-container .tutor {
     display: none;
   }
-
   .btn-hover {
     width: 250px;
     font-size: 16px;
@@ -727,29 +727,24 @@ ADD YOUR RESPONSIVE CSS HERE
     color: #fff;
     cursor: pointer;
     height: 60px;
-    text-align:center;
+    text-align: center;
     border: none;
     background-size: 300% 100%;
     border-radius: 50px;
+  }
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .col1 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .col3 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .testimonials3 {
+    height: auto;
+  }
 }
-
-.col{
-  flex: 100%;
-  max-width: 100%;
-}
-.col1{
-  flex: 100%;
-  max-width: 100%;
-}
-
-.col3{
-  flex: 100%;
-  max-width: 100%;
-}
-
-.testimonials3{
-  height: auto;
-}
- 
-}
-  

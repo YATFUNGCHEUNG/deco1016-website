@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- Linking all the docs -->
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
@@ -15,30 +16,35 @@
     <!-- Header -->
     <header class="header">
       <b>
+        <!-- Menu Symbol -->
         <i class="fas fa-bars" style="font-size: 2.3em;"></i>
       </b>
-      <img src="logo.png" alt="Ghibli logo"/>
+      <!-- Comnpany logo -->
+      <img src="newlogo.png" alt="Ghibli logo" />
     </header>
 
     <!-- Navigation -->
     <nav class="nav">
-      <!-- Internal nav container for sticky positioning -->
+      <!-- Internal nav container -->
       <div class="nav-container">
         <ul>
-          <!-- Nav items for current and potential future pages -->
-          <!-- <li class="active"><a href="index.html">Films</a></li> -->
+          <!-- Nav items for potential future pages -->
           <li><a href="#">How it works</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Find A Tutors</a></li>
           <li><a href="#">Courses</a></li>
           <li><a href="#">About Us</a></li>
+          <!-- buttons for user flow -->
           <div class="buttons">
             <ul>
               <li><a href="#">
-                  <button class="btn-hover color-1">Log In</button>
+                  <!-- button for existing users -->
+                  <button class="btn-hover color-1"><p>Log In</p></button>
                 </a>
               </li>
+              <!-- link to sign up page -->
               <li><a href="signup1.html">
+                  <!-- button for new users -->
                   <button class="btn-hover color-2">Start Free Trial</button>
                 </a>
               </li>
@@ -50,9 +56,15 @@
 
     <!-- Main content -->
     <main class="content">
+
+      <!-- Background image for content -->
       <div class="_BG"></div>
+
+      <!-- Company slogan -->
       <h1>GET BETTER GRADES.</h1>
       <h2>Private, 1–on–1 lessons with the expert instructor of your choice.</h2>
+
+      <!-- Search box to solve user's problem -->
       <div class="search-box">
         <input type="text" name="" class="search-txt"
           placeholder="What subject do you need help with? (e.g. 'Calculus')" />
@@ -60,25 +72,30 @@
           <i class="fas fa-search"></i>
         </a>
       </div>
+
+      <!-- Creating a container for the buttons -->
       <div class="content-container">
-        <!-- Nav items for current and potential future pages -->
-        <!-- <li class="active"><a href="index.html">Films</a></li> -->
+        <!-- These buttons only display on mobile while hidden in web -->
         <div class="buttons">
           <ul>
             <li><a href="#">
+                <!-- button for existing users -->
                 <button class="btn-hover color-1">Log In</button>
               </a>
             </li>
+            <!-- link to sign up page -->
             <li><a href="signup1.html">
+                <!-- button for new users -->
                 <button class="btn-hover color-2">Start Free Trial</button>
               </a>
             </li>
           </ul>
         </div>
       </div>
+
+      <!-- Creating a container for the tutor list -->
       <div class="tutor-container">
-        <!-- Nav items for current and potential future pages -->
-        <!-- <li class="active"><a href="index.html">Films</a></li> -->
+        <!-- To show the user the variety of tutors we have -->
         <div class="tutor">
           <ul>
             <li><a href="#">
@@ -115,130 +132,56 @@
         </div>
       </div>
 
-      <div class="block_1"></div>
+      <!-- A line to increase recognition -->
       <hr />
 
-      <!-- WHAT -->
+      <!-- Creating a container to explain how Tutor-X works -->
       <div class="testimonials1">
-          <div class="inner1">
-            <h3>How Tutor-X works</h3>
-  
-            <div class="row1">
-              <div class="col1">
-                <div class="testimonial1">
-                  <img src="video-conference.png" alt="">
-                  <div class="name1">1. Request</div>
-                  <p>
-                      Tell us what you need help with and our
-                      smart matching system will connect you
-                      with an online tutor. Sign up for a free trial using a debit/credit card. 
-                  </p>
-                </div>
-              </div>
-  
-              <div class="col1">
-                <div class="testimonial1">
-                  <img src="online-course.png" alt="">
-                  <div class="name1">2. Learn</div>
-                  <p>
-                      Get live 1-on-1 help in our advanced
-                      lesson space. Use a virtual whiteboard,
-                      audio/video chat, screen sharing, text
-                      editor and much more.
-                  </p>
-                </div>
-              </div>
-  
-              <div class="col1">
-                <div class="testimonial1">
-                  <img src="rating.png" alt="">
-                  <div class="name1">3. Review</div>
-                  <p>
-                      After the lesson is completed, both the
-                      tutor and student have the opportunity to
-                      rate each other, maintaining the quality of
-                      our community.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="inner1">
+          <!-- Title -->
+          <h3>How Tutor-X works</h3>
 
-
-      <!-- TUTORS FROM -->
-      <div class="testimonials2">
-          <div class="inner2">
-            <h4>Tutors from:</h4>
-  
-            <div class="row2">
-              <div class="col2">
-                <div class="testimonial2">
-                  <img src="logo-a.png" alt="">
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-      <!-- Feedback from customers -->
-      <div class="testimonials">
-        <div class="inner">
-          <h3>What our students have to say</h3>
-
-          <div class="row">
-            <div class="col">
-              <div class="testimonial">
-                <img src="eduardo.jpg" alt="">
-                <div class="name">Blake from Gold Coast, QLD</div>
-                <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-
+          <div class="row1">
+            <div class="col1">
+              <div class="testimonial1">
+                <img src="video-conference.png" alt="">
+                <!-- Step 1 -->
+                <div class="name1">1. Request</div>
+                <!-- Step 1 details -->
                 <p>
-                  Issac is a very good tutor. I was failing in class that I need to pass, thanks to Issac helped me pass my class and graduated. 
+                  Tell us what you need help with and our
+                  smart matching system will connect you
+                  with an online tutor.
                 </p>
               </div>
             </div>
 
-            <div class="col">
-              <div class="testimonial">
-                <img src="gregory.jpg" alt="">
-                <div class="name">Justin from Brisbane, QLD</div>
-                <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-
+            <div class="col1">
+              <div class="testimonial1">
+                <img src="online-course.png" alt="">
+                <!-- Step 2 -->
+                <div class="name1">2. Learn</div>
+                <!-- Step 2 details -->
                 <p>
-                  I believe in lifelong learning and Tutor-X is a great place to learn from experts. I've learned a lot and recommend it to all my friends.
+                  Get live 1-on-1 help in our advanced
+                  lesson space. Use a virtual whiteboard,
+                  audio/video chat, screen sharing, text
+                  editor and much more.
                 </p>
               </div>
             </div>
 
-            <div class="col">
-              <div class="testimonial">
-                <img src="michael.jpg" alt="">
-                <div class="name">Jessica from Melbourne, VIC</div>
-                <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-
+            <div class="col1">
+              <div class="testimonial1">
+                <img src="rating.png" alt="">
+                <!-- Step 3 -->
+                <div class="name1">3. Review</div>
+                <!-- Step 3 details -->
                 <p>
-                  I work in project management and joined Tutor-X because I get great courses for less. The instructors are fantastic, interesting, and helpful. I plan to use Tutor-X for a long time!
+                  After the lesson is completed, both the
+                  tutor and student have the opportunity to
+                  rate each other, maintaining the quality of
+                  our community.
                 </p>
               </div>
             </div>
@@ -246,73 +189,171 @@
         </div>
       </div>
 
+      <!-- Creating a container to show which institution the tutors are from -->
+      <div class="testimonials2">
+        <div class="inner2">
+          <!-- Title -->
+          <h4>Tutors from:</h4>
+          <div class="row2">
+            <div class="col2">
+              <div class="testimonial2">
+                <!-- USYD logo -->
+                <img src="logo-a.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Creating a container to show feedbacks from exisiting users -->
+      <div class="testimonials">
+        <div class="inner">
+          <!-- Title -->
+          <h3>What our students have to say</h3>
+          <div class="row">
+            <!-- Existing user 1 -->
+            <div class="col">
+              <div class="testimonial">
+                <!-- User 1 profile pics -->
+                <img src="eduardo.jpg" alt="">
+                <!-- User 1 profile detail -->
+                <div class="name">Blake from Gold Coast, QLD</div>
+                <!-- Service rating from existing user 1 -->
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <!-- User 1 feedback -->
+                <p>
+                  Issac is a very good tutor. I was failing in class that I need to pass, thanks to Issac helped me pass
+                  my class and graduated.
+                </p>
+              </div>
+            </div>
+            <!-- Existing user 2 -->
+            <div class="col">
+              <div class="testimonial">
+                <!-- User 2 profile pics -->
+                <img src="gregory.jpg" alt="">
+                <!-- User 2 profile detail -->
+                <div class="name">Justin from Brisbane, QLD</div>
+                <!-- Service rating from existing user 1 -->
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <!-- User 2 feedback -->
+                <p>
+                  I believe in lifelong learning and Tutor-X is a great place to learn from experts. I've learned a lot
+                  and recommend it to all my friends.
+                </p>
+              </div>
+            </div>
+            <!-- Existing user 3 -->
+            <div class="col">
+              <div class="testimonial">
+                <!-- User 3 profile pics -->
+                <img src="michael.jpg" alt="">
+                <!-- User 3 profile detail -->
+                <div class="name">Jessica from Melbourne, VIC</div>
+                <!-- Service rating from existing user 1 -->
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <!-- User 3 feedback -->
+                <p>
+                  I work in project management and joined Tutor-X because I get great courses for less. The instructors
+                  are fantastic, interesting, and helpful. I plan to use Tutor-X for a long time!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-
   </div>
 
   <!-- Footer -->
   <footer class="footer">
-      <div class="testimonials3">
-          <div class="inner3">
-  
-            <div class="row3">
-              <div class="col3">
-                <div class="testimonial3">
-                    <div class="name3">Get to know us</div>
-                    <a href="">About Us</a>
-                    <a href="">Help Center</a>
-                    <a href="">Honor Code</a>
-                    <a href="">Our Blog</a>
-                </div>
+    <!-- Creating a container to the Nav items for potential future pages -->
+    <div class="testimonials3">
+      <div class="inner3">
+        <!-- First column of tabs -->
+        <div class="row3">
+          <div class="col3">
+            <div class="testimonial3">
+              <!-- Topic 1 -->
+              <div class="name3">Get to know us</div>
+              <!-- Nav items -->
+              <a href="">About Us</a>
+              <a href="">Help Center</a>
+              <a href="">Honor Code</a>
+              <a href="">Our Blog</a>
+            </div>
+          </div>
+          <!-- Second column of tabs -->
+          <div class="col3">
+            <div class="testimonial3">
+              <!-- Topic 2 -->
+              <div class="name3">Writing Resources</div>
+              <!-- Nav items -->
+              <a href="">Demo Lesson Space</a>
+              <a href="">Subjects</a>
+              <a href="">Browse Tutors</a>
+              <a href="">Test Prep Courses</a>
+            </div>
+          </div>
+          <!-- Third column of tabs -->
+          <div class="col3">
+            <div class="testimonial3">
+              <!-- Topic 3 -->
+              <div class="name3">Partner with us</div>
+              <!-- Nav items -->
+              <a href="">Ambassadors</a>
+              <a href="">Academic Partners</a>
+              <a href="">Corporate Partners</a>
+              <a href="">Become a Tutor</a>
+            </div>
+          </div>
+          <!-- Fourth column of tabs -->
+          <div class="col3">
+            <div class="testimonial3">
+              <!-- Terms of Service & Privacy -->
+              <div class="_term">
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
               </div>
-  
-              <div class="col3">
-                  <div class="testimonial3">
-                      <div class="name3">Writing Resources</div>
-                      <a href="">Demo Lesson Space</a>
-                      <a href="">Subjects</a>
-                      <a href="">Browse Tutors</a>
-                      <a href="">Test Prep Courses</a>
-                  </div>
-                </div>
-  
-                <div class="col3">
-                    <div class="testimonial3">
-                        <div class="name3">Partner with us</div>
-                        <a href="">Ambassadors</a>
-                        <a href="">Academic Partners</a>
-                        <a href="">Corporate Partners</a>
-                        <a href="">Become a Tutor</a>
-                    </div>
-                </div>
-
-                <div class="col3">
-                    <div class="testimonial3">
-                        <div class="_term">
-                          <a href="">Terms of Service</a>
-                          <a href="">Privacy Policy</a>
-                        </div>
-
-                        <a href="">Made in Australia by Yat</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <a href="">
-                          © <!-- -->
-                          2019<!-- --> 
-                          Tutor-X, LLC
-                        </a>
-                    </div>
-                </div>
+              <!-- Author of this Website -->
+              <a href="">Made in Australia by Yat</a>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <a href="">
+                ©
+                <!-- Year made -->
+                2019
+                <!-- Company name-->
+                Tutor-X, LLC
+              </a>
             </div>
           </div>
         </div>
+      </div>
+    </div>
   </footer>
   </div>
-
 
 </body>
 
